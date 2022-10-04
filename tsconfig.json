@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "target": "ES2015",
-    "strict": true
+    "strict": true,
+    "moduleResolution": "node"
   },
-  "include": ["examples/**/*.ts"]
+  "include": ["examples/**/*.ts"],
+  "exclude": ["examples/**/*.spec.ts"]
 }
