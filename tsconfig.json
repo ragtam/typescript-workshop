@@ -4,6 +4,4 @@
     "strict": true,
     "moduleResolution": "node"
   },
-  "include": ["examples/**/*.ts"],
-  "exclude": ["examples/**/*.spec.ts"]
 }
