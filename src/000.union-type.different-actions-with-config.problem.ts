@@ -8,20 +8,20 @@ interface Config {
     suffix?: string;
 }
 
-function doMagicWithConfig(value: number | string | boolean, config?: Config): number | string | boolean {
+function foo(value: number | string | boolean, config?: Config): number | string | boolean {
     return 'implementation goes here';
 }
 
 describe('union type, different actions', () => {
     it('should add value from config if value is a number', () => {
-        expect(doMagicWithConfig(1, { valueToAdd: 2 })).toEqual(3);
+        expect(foo(1, { valueToAdd: 2 })).toEqual(3);
     })
 
     it('should make a string uppercase', () => {
-        expect(doMagicWithConfig("Hello World", { suffix: '!!!' })).toEqual('HELLO WORLD!!!');
+        expect(foo("Hello World", { suffix: '!!!' })).toEqual('HELLO WORLD!!!');
     })
 
     it('should negate if boolean', () => {
-        expect(doMagicWithConfig(true)).toEqual(false);
+        expect(foo(true)).toEqual(false);
     })
 })

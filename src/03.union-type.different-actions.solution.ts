@@ -3,27 +3,34 @@
 // - if provided with string, makes it uppercase
 // - if provided with boolean, returns its negation
 
-// make sure return type is typed correctly based on its input value.
+// return value of a function is number | string | boolean
 
-// implementation goes here
-function doMoreCleverMagic(value: number | string | boolean): number | string | boolean
-{
-    return 'implementation goes here';
+function foo(value: number | string | boolean): number | string | boolean {
+    switch (typeof value) {
+        case "number":
+            return value + 1;
+        case "string":
+            return value.toUpperCase();
+        case "boolean":
+            return !value;
+    }
 }
 
 describe('union type, different actions', () => {
     it('should add +1 if value is a number', () => {
-        const res: number = doMoreCleverMagic(1);
+        const res = foo(1);
         expect(res).toEqual(2);
     })
 
     it('should make a string uppercase', () => {
-        const res: string = doMoreCleverMagic("Hello World");
+        const res = foo("Hello World");
         expect(res).toEqual('HELLO WORLD');
     })
 
     it('should negate if boolean', () => {
-        const res: boolean = doMoreCleverMagic(true);
+        const res = foo(true);
         expect(res).toEqual(false);
     })
 })
+
+export {}

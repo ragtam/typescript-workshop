@@ -36,3 +36,5 @@ describe('union type, different actions', () => {
         expect(res).toEqual(false);
     })
 })
+
+export {}

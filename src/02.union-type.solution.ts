@@ -1,7 +1,7 @@
 // 1. write a function that appends value type suffix to its value.
 
 function getValueWithDescription(value: number | string | boolean): string {
-    return 'implementation goes here';
+    return `${ value } (${ typeof value })`
 }
 
 describe('union type', () => {
