@@ -5,8 +5,13 @@ function fun<TParameter>(a: TParameter): TParameter {
     return a;
 }
 
-let num = fun(1);
-let str = fun('hello');
-let bool = fun(true);
+let num = fun<number>(1);
+let str = fun<string>('hello');
+let bool = fun<boolean>(true);
+
+// @ts-expect-error
+let incorrectType = fun<number>('string');
+
+let inferredTParameter = fun(1);
 
 export {}

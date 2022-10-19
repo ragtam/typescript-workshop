@@ -22,6 +22,6 @@ describe('union type, different actions', () => {
     })
 
     it('should negate if boolean', () => {
-        expect(foo(true)).toEqual(false);
+        expect(foo(true, undefined)).toEqual(false);
     })
 })

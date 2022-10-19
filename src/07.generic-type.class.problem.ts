@@ -2,10 +2,10 @@
 // e.g When string was passed in constructor, methods handle strings only.
 
 class MyClass {
-    #value: any;
+    private value: any;
 
     constructor(value: any) {
-        this.#value = value;
+        this.value = value;
     }
 
     public logType(type: any): void {
@@ -13,7 +13,7 @@ class MyClass {
     }
 
     public getArrayOfType(): any[] {
-        return [this.#value];
+        return [this.value];
     }
 }
 

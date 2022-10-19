@@ -1,8 +1,8 @@
 class MyClass<T> {
-    #value: T;
+    private value: T;
 
     constructor(value: T) {
-        this.#value = value;
+        this.value = value;
     }
 
     public logType(type: T): void {
@@ -10,7 +10,7 @@ class MyClass<T> {
     }
 
     public getArrayOfType(): T[] {
-        return [this.#value];
+        return [this.value];
     }
 }
 
