@@ -15,13 +15,13 @@ function foo(value: number | string | boolean, config?: Config): number | string
 describe('union type, different actions', () => {
     it('should add value from config if value is a number', () => {
         expect(foo(1, { valueToAdd: 2 })).toEqual(3);
-    })
+    });
 
     it('should make a string uppercase', () => {
-        expect(foo("Hello World", { suffix: '!!!' })).toEqual('HELLO WORLD!!!');
-    })
+        expect(foo('Hello World', { suffix: '!!!' })).toEqual('HELLO WORLD!!!');
+    });
 
     it('should negate if boolean', () => {
         expect(foo(true, undefined)).toEqual(false);
-    })
-})
+    });
+});

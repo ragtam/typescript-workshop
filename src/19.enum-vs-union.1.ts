@@ -1,7 +1,7 @@
 enum EnumWithStrings {
     FirstOption = 'First One',
     SecondOption = 'Second One',
-    ThirdOption = 'Third One'
+    ThirdOption = 'Third One',
 }
 
-console.info(Object.values(EnumWithStrings))
+console.info(Object.values(EnumWithStrings));

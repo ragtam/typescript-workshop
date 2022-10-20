@@ -9,4 +9,4 @@ type TypeOfPropA = MyInterface['propA'];
 
 const x: TypeOfPropA = 1;
 
-export {}
+export {};

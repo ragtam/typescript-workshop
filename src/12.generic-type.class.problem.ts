@@ -29,4 +29,4 @@ obj2.logType(false);
 obj.logType(123);
 const r2 = obj2.getArrayOfType();
 
-export {}
+export {};

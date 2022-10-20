@@ -6,9 +6,9 @@ interface MyInterface {
 }
 
 interface MyPickedInterface {
-    propA: number
+    propA: number;
 }
 
-const a: MyPickedInterface = { propA: 1 }
+const a: MyPickedInterface = { propA: 1 };
 
-export {}
+export {};

@@ -6,16 +6,16 @@ function getValueWithDescription(value: number | string | boolean): string {
 
 describe('union type', () => {
     it('should return "1 (number)" for 1', () => {
-        expect(getValueWithDescription(1)).toEqual('1 (number)')
-    })
+        expect(getValueWithDescription(1)).toEqual('1 (number)');
+    });
 
     it('should return "1 (number)" for "1"', () => {
-        expect(getValueWithDescription("1")).toEqual('1 (string)')
-    })
+        expect(getValueWithDescription('1')).toEqual('1 (string)');
+    });
 
     it('should return "true (number)" for true', () => {
-        expect(getValueWithDescription(true)).toEqual('true (boolean)')
-    })
-})
+        expect(getValueWithDescription(true)).toEqual('true (boolean)');
+    });
+});
 
-export {}
+export {};

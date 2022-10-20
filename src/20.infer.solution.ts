@@ -10,4 +10,4 @@ const arrayOfNumbers = [1, 2];
 type Test1 = WhatIsArrayType<typeof arrayOfNumbers>;
 const res1: Test1 = 100;
 
-export {}
+export {};

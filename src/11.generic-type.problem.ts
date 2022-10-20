@@ -9,4 +9,4 @@ let num = fun(1);
 let str = fun('hello');
 let bool = fun(true);
 
-export {}
+export {};

@@ -5,8 +5,8 @@ interface MyInterface {
     propB?: number;
 }
 
-type MyPickedInterface = Pick<MyInterface, 'propA'>
+type MyPickedInterface = Pick<MyInterface, 'propA'>;
 
-const a: MyPickedInterface = { propA: 1 }
+const a: MyPickedInterface = { propA: 1 };
 
-export {}
+export {};

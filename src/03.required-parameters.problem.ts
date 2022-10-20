@@ -13,6 +13,6 @@ interface MyRequiredInterface {
 const a: MyInterface = {};
 // @ts-expect-error
 const b: MyRequiredInterface = {};
-const c: MyRequiredInterface = { propA: 1, propB: 2 }
+const c: MyRequiredInterface = { propA: 1, propB: 2 };
 
-export {}
+export {};

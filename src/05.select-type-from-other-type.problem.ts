@@ -9,4 +9,4 @@ type TypeOfPropA = number;
 
 const x: TypeOfPropA = 1;
 
-export {}
+export {};

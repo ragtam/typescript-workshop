@@ -16,4 +16,4 @@ myFun(myObj, 'value');
 // @ts-expect-error
 myFun(myObj, 'unknownKey');
 
-export {}
+export {};

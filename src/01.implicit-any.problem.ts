@@ -5,4 +5,4 @@ function greet(person, date) {
     console.log(`Hello ${person}, today is ${date}!`);
 }
 
-greet("Tom", new Date());
+greet('Tom', new Date());

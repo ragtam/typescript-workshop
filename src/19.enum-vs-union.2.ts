@@ -1,7 +1,7 @@
 enum EnumWithNumbers {
     FirstOption,
     SecondOption,
-    ThirdOption
+    ThirdOption,
 }
 
-console.info(Object.values(EnumWithNumbers))
+console.info(Object.values(EnumWithNumbers));

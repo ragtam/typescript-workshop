@@ -14,4 +14,4 @@ let incorrectType = fun<number>('string');
 
 let inferredTParameter = fun(1);
 
-export {}
+export {};

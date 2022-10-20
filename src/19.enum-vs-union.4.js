@@ -1,9 +1,9 @@
 var TimeOfDay;
 (function (TimeOfDay) {
-    TimeOfDay["Morning"] = "morning";
-    TimeOfDay["Evening"] = "evening";
-    TimeOfDay["Afternoon"] = "afternoon";
-    TimeOfDay["Night"] = "night";
+    TimeOfDay['Morning'] = 'morning';
+    TimeOfDay['Evening'] = 'evening';
+    TimeOfDay['Afternoon'] = 'afternoon';
+    TimeOfDay['Night'] = 'night';
 })(TimeOfDay || (TimeOfDay = {}));
 var allTimes = [TimeOfDay.Morning, TimeOfDay.Evening, TimeOfDay.Afternoon, TimeOfDay.Night];
 function funWithEnum(v) {

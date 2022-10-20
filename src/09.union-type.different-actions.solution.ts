@@ -7,11 +7,11 @@
 
 function foo(value: number | string | boolean): number | string | boolean {
     switch (typeof value) {
-        case "number":
+        case 'number':
             return value + 1;
-        case "string":
+        case 'string':
             return value.toUpperCase();
-        case "boolean":
+        case 'boolean':
             return !value;
     }
 }
@@ -20,17 +20,17 @@ describe('union type, different actions', () => {
     it('should add +1 if value is a number', () => {
         const res = foo(1);
         expect(res).toEqual(2);
-    })
+    });
 
     it('should make a string uppercase', () => {
-        const res = foo("Hello World");
+        const res = foo('Hello World');
         expect(res).toEqual('HELLO WORLD');
-    })
+    });
 
     it('should negate if boolean', () => {
         const res = foo(true);
         expect(res).toEqual(false);
-    })
-})
+    });
+});
 
-export {}
+export {};

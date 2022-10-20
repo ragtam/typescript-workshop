@@ -5,7 +5,7 @@
 // Option 3: extend option 2 with type check, so that only keys defined in source type were allowed
 
 type UserComment = 'ok' | 'not ok' | 'great';
-type PositiveFeedback = any // implementation goes here
+type PositiveFeedback = any; // implementation goes here
 
 function sendFeedback(comment: PositiveFeedback): void {
     console.info(comment);
@@ -17,4 +17,4 @@ const great = sendFeedback('great');
 // @ts-expect-error
 const notOk = sendFeedback('not ok');
 
-export {}
+export {};

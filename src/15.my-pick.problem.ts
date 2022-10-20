@@ -9,4 +9,4 @@ const originalPick: Pick<MyInterface, 'name'> = { name: 'original pick' };
 
 const myPick: MyPick<MyInterface, 'name'> = { name: 'my pick' };
 
-export {}
+export {};

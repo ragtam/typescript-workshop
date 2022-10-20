@@ -7,4 +7,4 @@ const res2 = myFun({ b: true }, 'b');
 // @ts-expect-error
 const res3: boolean = myFun(1, 'toString');
 
-export {}
+export {};

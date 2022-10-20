@@ -8,16 +8,19 @@ interface ConfigForNumber {
 }
 
 interface ConfigForString {
-    suffix: string
+    suffix: string;
 }
 
 type Config = ConfigForNumber | ConfigForString;
-type ReturnType<T extends number | string> = T extends number ? number : string
+type ReturnType<T extends number | string> = T extends number ? number : string;
 
-function foo<TValue extends number | string>(value: TValue, config: TValue extends number ? ConfigForNumber : ConfigForString): ReturnType<TValue> {
-    if( typeof value === 'number' && config && 'valueToAdd' in config ) {
-        return value + config.valueToAdd as ReturnType<TValue>;
-    } else if ( typeof value === 'string' && config && 'suffix' in config ){
+function foo<TValue extends number | string>(
+    value: TValue,
+    config: TValue extends number ? ConfigForNumber : ConfigForString
+): ReturnType<TValue> {
+    if (typeof value === 'number' && config && 'valueToAdd' in config) {
+        return (value + config.valueToAdd) as ReturnType<TValue>;
+    } else if (typeof value === 'string' && config && 'suffix' in config) {
         return `${value}${config.suffix}` as ReturnType<TValue>;
     }
 
@@ -27,11 +30,11 @@ function foo<TValue extends number | string>(value: TValue, config: TValue exten
 describe('union type, different actions', () => {
     it('should add value from config if value is a number', () => {
         expect(foo(1, { valueToAdd: 2 })).toEqual(3);
-    })
+    });
 
     it('should make a string uppercase', () => {
-        expect(foo("Hello World", { suffix: '!!!' })).toEqual('HELLO WORLD!!!');
-    })
-})
+        expect(foo('Hello World', { suffix: '!!!' })).toEqual('HELLO WORLD!!!');
+    });
+});
 
-export {}
+export {};

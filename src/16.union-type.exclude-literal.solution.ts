@@ -2,7 +2,7 @@
 
 type UserComment = 'ok' | 'not ok' | 'great';
 // Option 1
-type PositiveFeedback = Exclude<UserComment, 'not ok'>
+type PositiveFeedback = Exclude<UserComment, 'not ok'>;
 
 // Option 2
 // type MyExclude<TSourceType, KLiteralToExclude> = TSourceType extends KLiteralToExclude ? never : TSourceType
@@ -22,4 +22,4 @@ const great = sendFeedback('great');
 // @ts-expect-error
 const notOk = sendFeedback('not ok');
 
-export {}
+export {};

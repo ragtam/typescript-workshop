@@ -14,4 +14,4 @@ const res2 = myFun(myObj, 'key');
 // @ts-expect-error
 const res3: boolean = myFun(myObj, 'value');
 
-export {}
+export {};
