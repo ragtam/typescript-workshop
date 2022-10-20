@@ -3,7 +3,7 @@ interface MyInterface {
     value: number;
 }
 
-type MyPick = any;``
+type MyPick = any;
 
 const originalPick: Pick<MyInterface, 'name'> = { name: 'original pick' };
 
